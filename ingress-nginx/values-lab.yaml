@@ -1,0 +1,12 @@
+controller:
+  service:
+    type: LoadBalancer         # MetalLB will give this service an IP
+    externalTrafficPolicy: Cluster
+
+  ingressClassResource:
+    enabled: true
+    name: nginx
+    default: true              # make this the default IngressClass
+
+  watchIngressWithoutClass: true
+
