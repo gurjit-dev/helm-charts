@@ -61,7 +61,8 @@ app:
       secretName: kubernetes-dashboard-tls  # cert-manager will create this
 
     labels: {}
-    annotations: {}
+    annotations: 
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
   tolerations: []
   affinity: {}
