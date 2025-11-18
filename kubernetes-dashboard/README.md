@@ -160,3 +160,7 @@ To do that you can follow the [guide](https://helm.sh/blog/migrate-from-helm-v2-
 
 For information about how to access, please read
 the [kubernetes-dashboard manual](https://github.com/kubernetes/dashboard)
+
+# Dashboard token
+
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | awk '/^deployment-controller-token-/{print $1}') | awk '$1=="token:"{print $2}'
