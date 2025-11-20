@@ -7,4 +7,5 @@ metadata:
   name: selfsigned-root
 spec:
   selfSigned: {}
+{{- end }}
 
