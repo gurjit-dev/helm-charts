@@ -1,5 +1,3 @@
-{{- if .Values.internalCA.enabled }}
-
 # 1) Self-signed root ClusterIssuer
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
@@ -7,5 +5,4 @@ metadata:
   name: selfsigned-root
 spec:
   selfSigned: {}
-{{- end }}
 

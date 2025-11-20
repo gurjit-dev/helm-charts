@@ -1493,6 +1493,3 @@ creator: "helm"
 # +docs:hidden
 enabled: true
 
-internalCA:
-  enabled: true
-
