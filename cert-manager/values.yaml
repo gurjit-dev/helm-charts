@@ -1492,3 +1492,7 @@ creator: "helm"
 # for more info.
 # +docs:hidden
 enabled: true
+
+internalCA:
+  enabled: true
+
