@@ -31,6 +31,7 @@ metadata:
     {{- end }}
   annotations:
     {{- include "kubernetes-dashboard.annotations" . | nindent 4 }}
+    cert-manager.io/common-name: {{ first .Values.app.ingress.hosts | quote }}
     {{- if eq .Values.app.ingress.issuer.scope "default" }}
     cert-manager.io/issuer: {{ .Values.app.ingress.issuer.name }}
     {{- end }}
