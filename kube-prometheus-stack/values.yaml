@@ -1319,7 +1319,7 @@ grafana:
     ##
     enabled: true
 
-    IngressClassName: nginx
+    ingressClassName: nginx
     ## Should be provided if Ingress is enable.
     ##
     # ingressClassName: nginx
