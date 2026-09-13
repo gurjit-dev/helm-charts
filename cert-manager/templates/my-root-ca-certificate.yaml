@@ -5,6 +5,8 @@ metadata:
   namespace: cert-manager
 spec:
   isCA: true
+  duration: 87600h
+  renewBefore: 720h
   commonName: my-root-ca
   secretName: my-root-ca-secret
   issuerRef:
